@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="<?php echo $lang; ?>">
+<head>
+	<meta charset="utf-8">
+	<title>モバイルSuica履歴</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
+
+	
+</head>
+<body>
+<style>
+
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+body{
+	  	font-family: Arial, Meiryo, sans-serif;
+		padding:0;
+		margin:0;
+		font-size:100%;
+		color:#242424;
+		background-color:#f5f5f5;
+	}
+a{
+	text-decoration:none;
+}
+a, a:visited, .blue{
+	color:#0064b4;
+	text-decoration:underline;
+}
+hr{
+	border: 0;
+	height: 1px;
+
+	margin-top:1px;
+	margin-bottom:6px;
+	box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+
+}
+</style>
+
+<div style="padding:14px;">
+	<div>
+	<form method="post" id="type1">
+		<select id="type1shop"  required style="width:130px;">
+		<option value="オーケー">オーケー</option>
+		<option value="やよい軒">やよい軒</option>
+		<option value="まいばすけっと">まいばすけっと</option>
+		<option value="ローソン100">ローソン100</option>
+		</select>
+		<div style="display:inline-block;width:calc(100% - 130px - 5px);text-align:right;"><input type="number" id="type1price" value="" style="-webkit-appearance: none;-moz-appearance:textfield;margin:0 7px 0 0;padding:4px;width:170px;"  required>円</div>
+		<div style="text-align:right;padding:7px 0 14px 0;"><input type="submit" value="送信"></div>
+	</form>
+	</div>
+	
+	<div style="margin:7px 0 0 0;">
+	<form method="post" id="type2">
+		<select id="type2shop"  required style="width:130px;">
+		<option value="Amazonギフト券">Amazonギフト券</option>
+		<option value="オリジン弁当">オリジン弁当</option>
+		<option value="マツモトキヨシ">マツモトキヨシ</option>
+		<option value="ダイソー">ダイソー</option>
+		<option value="リブロ">リブロ</option>
+		<option value="ヨドバシカメラ">ヨドバシカメラ</option>
+		<option value="自動販売機">自動販売機</option>
+		<option value="ミスタードーナッツ">ミスタードーナッツ</option>
+		<option value="ドン・キホーテ">ドン・キホーテ</option>
+		<option value="壱角家">壱角家</option>
+		<option value="ローソン">ローソン</option>
+		<option value="ファミマ">ファミマ</option>
+		<option value="セブンイレブン">セブンイレブン</option>
+		</select>
+		<div style="display:inline-block;width:calc(100% - 130px - 5px);text-align:right;"><input type="number" id="type2price"  value="" style="-webkit-appearance: none;-moz-appearance:textfield;margin:0 7px 0 0;padding:4px;width:170px;"  required>円</div>
+		<div style="text-align:right;padding:7px 0 14px 0;"><input type="submit" value="送信"></div>
+	</form>	
+	</div>
+	
+	<div style="margin:7px 0 0 0;">
+	<form method="post" id="type3">
+		<input id="type3shop" value="" style="-webkit-appearance: none;-moz-appearance:textfield;margin:0;padding:4px;width:118px;"  required>
+		<div style="display:inline-block;width:calc(100% - 130px - 5px);text-align:right;"><input type="number" id="type3price" value="" style="-webkit-appearance: none;-moz-appearance:textfield;margin:0 7px 0 0;padding:4px;width:170px;"  required>円</div>
+		<div style="text-align:right;padding:7px 0 14px 0;"><input type="submit" value="送信"></div>
+	</form>	
+	</div>	
+	
+	<div style="0;">
+		<span style="font-weight:bold;font-size:110%;">過去1週間の履歴</span>
+
+		<div id="rireki">
+		
+		</div>
+	</div>
+</div>
+<script src="suica.js"></script>
+</body>
+</html>
