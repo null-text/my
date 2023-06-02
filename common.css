@@ -1,0 +1,116 @@
+/* ====================== */
+/* -------General-------- */
+/* ====================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size:13px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: sans-serif;
+
+}
+a{
+	color:var(--color-blue-60);
+}
+
+
+button, select, input, textarea {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+:focus {
+    outline: none;
+}
+
+div{
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+p {
+  margin-bottom: .5em;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+span{
+  font-size: 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  width: 100%;
+}
+
+label {
+	
+}
+.hidden{
+	display:none!important;
+}
+
+.fadeout{
+	animation: fadeOut 2s ease-in 0s 1 normal both;
+	color:var(--color-blue);
+}
+
+@keyframes fadeOut { 
+
+  0% {opacity: 1;} 
+
+  100% {opacity: 0;}
+
+}
+
+.fadein{
+	animation: fadeIn 0.5s ease 0s 1 normal both;
+}
+
+@keyframes fadeIn { 
+
+  0% {opacity: 0;top: -10px;} 
+
+  100% {opacity: 1;top: -6px;}
+
+}
+/* ====================== */
+/* ------Variables------- */
+/* ====================== */
+
+:root {
+  --color-grey-lightest: #fbfbfb;
+  --color-grey-lighter: #ebebeb;
+  --color-grey-light: #d4d4d4;
+  --color-grey: #b1b1b1;
+  --color-grey-dark: #858585;
+  --color-grey-disabled: #999999;
+
+  --color-blue: #0996f8;
+  --color-blue-dark: #0670cc;
+  --color-blue-darker: #005bab;
+  --color-blue-darkest: #004480;
+  --color-blue-focusRing: hsla(208,100%,69%,.75);
+  
+  --color-blue-60: #0060df;
+
+  --border-radius-osx: 4px;
+}
+

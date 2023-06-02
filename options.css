@@ -1,0 +1,457 @@
+/* ====================== */
+/* ------Variables------- */
+/* ====================== */
+
+:root {
+  --color-grey-60: #4a4a4f;
+  --color-grey-90: #0c0c0d;
+  
+  --color-grey-10: #f9f9fa;
+  
+  --color-red-60: #d70022;
+  --color-red-focusRing: rgba(251, 0, 34, 0.3);
+}
+
+
+body{
+	background-color:var(--color-grey-90);
+}
+#wrapper{
+
+}
+#header{
+	color:#fff;
+	font-size:22px;
+	font-weight:bold;
+	margin:32px 0 0 0;
+}
+#header img{
+	max-height:32px;
+	width:auto;
+	vertical-align:middle;
+	margin:0 8px 0 0;
+}
+#menu{
+	display:block;
+	text-align:center;
+	width:80px;
+	background-color:var(--color-grey-10);
+	color:var(--color-blue);
+	font-size:15px;
+	font-weight:bold;
+	margin:8px 0 12px auto;
+	border-radius:20px;
+	line-height:1.5em;
+	
+}
+#menu img{
+	vertical-align:middle;
+	margin:0 4px 0 0;
+}
+#menu a{
+	display:block;
+	color:var(--color-blue);
+	text-decoration:none;
+}
+#options{
+	background-color:var(--color-grey-10);
+	color:var(--color-grey-60);
+	border-radius:4px;
+	padding:16px;
+}
+
+.options-list{
+	font-size:15px;
+	margin:0;
+	color:var(--color-grey-90);
+	line-height:2;
+}
+
+.options-list-item{
+	font-size:13px;
+	color:var(--color-grey-60);
+	margin:0 0 8px 0;
+	line-height:1.7;
+}
+.options-list-item-sub{
+	margin:0!important;
+}
+.options-list-item-right{
+	float:right;
+	clear:both;
+}
+.options-section-separator {
+  min-height: 1px;
+  background-color: #d7d7db;
+  margin:12px 0;
+}
+label{
+	font-size:13px;
+	color:var(--color-grey-60);
+}
+.center{
+	margin:0 auto;
+	display:block;
+}
+.checkboxItem label{
+	display:inline-block;
+	width:180px;
+}
+
+.help{
+	height:15px;
+	width:auto;
+	fill:var(--color-blue);
+	vertical-align:middle;
+	margin:0 2px 0 0;
+}
+.info{
+	height:12px;
+	width:auto;
+	fill:var(--color-grey-60);
+}
+.info:hover{
+	fill:var(--color-grey-90);
+}
+
+.message{
+	text-align:right;
+	position:absolute;
+	bottom:16px;
+	right:16px;
+	
+}
+
+/* ====================== */
+/* ------Dropdowns------- */
+/* ====================== */
+
+select {
+  outline: 0 !important;
+  width: 80px;
+  height: 24px;
+  padding: 0 8px 0;
+  background-color: var(--color-grey-lightest);
+  border: 1px solid var(--color-grey);
+  box-shadow: 0 0 0 0 hsla(0,0%,0%,0);
+  transition-property: box-shadow, border;
+  transition-duration: 250ms;
+  cursor:pointer;
+}
+
+select {
+  width: 216px;
+  -moz-padding-end: 24px;
+  background-image: url("images/Arrow-Dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 4px) center;
+  text-overflow: ellipsis;
+  color:var(--color-grey-60);
+
+}
+
+select.key{
+	width:4em;
+}
+
+/* Hack for hiding the focus ring inside of the dropdown :( */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow:0 0 0 #000; /* your normal text color here */
+}
+select:-moz-focusring * {
+  color: #000; /* your normal text color here */
+  text-shadow: none;
+}
+
+select option:disabled {
+    color:var(--color-grey-light);
+}
+
+/* ====================== */
+/* ----Radio Buttons----- */
+/* ====================== */
+
+.radioItem {
+  margin-bottom: 6px;
+}
+
+.radioItem.mini {
+	display:inline-block;
+	float:right;
+	text-align:right;
+	margin-left:12px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  -moz-user-select: none;
+  cursor:pointer;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-color: #fff;
+  border: 1px solid var(--color-grey);
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+
+input[type="radio"]:hover + label:before{
+  background-color: var(--color-grey-lightest);
+  border-color: var(--color-grey);
+}
+
+input[type="radio"]:hover:active + label:before{
+  background-color: var(--color-grey-lighter);
+  border-color: var(--color-grey-dark);
+}
+
+input[type="radio"]:checked + label:before {
+  background-color: var(--color-blue);
+  background-image: url("images/Radio-Checked.svg");
+  border-color: var(--color-blue-dark);
+}
+
+input[type="radio"]:checked:hover + label:before{
+  background-color: var(--color-blue-dark);
+  border-color: var(--color-blue-darker);
+}
+
+input[type="radio"]:checked:hover:active + label:before{
+  background-color: var(--color-blue-darker);
+  border-color: var(--color-blue-darkest);
+}
+
+
+
+/* ====================== */
+/* -------Checkbox------- */
+/* ====================== */
+
+.checkboxItem {
+  margin-bottom: 6px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  -moz-user-select: none;
+  cursor:pointer;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-color: #fff;
+  border: 1px solid var(--color-grey);
+  vertical-align: text-top;
+  border-radius:2px;
+}
+
+input[type="checkbox"]:hover + label:before{
+  background-color: var(--color-grey-lightest);
+  border-color: var(--color-grey);
+}
+
+input[type="checkbox"]:hover:active + label:before{
+  background-color: var(--color-grey-lighter);
+  border-color: var(--color-grey-dark);
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: var(--color-blue);
+  background-image: url("images/Checkbox-Checked.svg");
+  border-color: var(--color-blue-dark);
+}
+
+input[type="checkbox"]:checked:hover + label:before{
+  background-color: var(--color-blue-dark);
+  border-color: var(--color-blue-darker);
+}
+
+input[type="checkbox"]:checked:hover:active + label:before{
+  background-color: var(--color-blue-darker);
+  border-color: var(--color-blue-darkest);
+}
+
+
+
+
+/* ====================== */
+/* --------Fields-------- */
+/* ====================== */
+
+input[type="text"] {
+  width: 100%;
+  height: 24px;
+  padding: 0 6px 0;
+  background-color: #fff;
+  border: 1px solid var(--color-grey);
+  box-shadow: 0 0 0 0 hsla(208,100%,69%,0);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  color:var(--grey-dark);
+
+}
+
+
+
+input[type="text"].mini {
+	width:108px;
+}
+
+input[type="text"].long {
+	  width: 216px;
+}
+/* --Interactive States-- */
+
+input[type="text"]:not(disabled="true"):hover {
+  border: 1px solid var(--color-grey-dark);
+}
+
+input[type="text"]:focus {
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 2px var(--color-blue-focusRing);
+}
+
+
+input[type="text"]:invalid {
+  border-color: var(--color-red-60);
+  box-shadow: 0 0 0 2px var(--color-red-focusRing);
+}
+
+/* ====================== */
+/* -------Buttons-------- */
+/* ====================== */
+
+button {
+  outline: 0 !important;
+  width: 80px;
+  height: 24px;
+  padding: 0 8px 0;
+  background-color: var(--color-grey-lightest);
+  border: 1px solid var(--color-grey);
+  box-shadow: 0 0 0 0 hsla(0,0%,0%,0);
+  transition-property: box-shadow, border;
+  transition-duration: 250ms;
+  cursor:pointer;
+    border-radius:2px;
+}
+
+button::-moz-focus-inner{
+  outline: 0;
+  border: 0;
+}
+
+button.default {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue-dark);
+  color: #fff;
+  height:32px;
+  width:132px;
+  font-size:13px;
+
+}
+
+
+
+/* --Interactive States-- */
+button:hover {
+  background-color: var(--color-grey-lighter);
+  border: 1px solid var(--color-grey);
+}
+
+button:hover:active{
+  background-color: var(--color-grey-light);
+  border: 1px solid var(--color-grey-dark);
+}
+
+button.default:hover {
+  background-color: var(--color-blue-dark);
+  border-color: var(--color-blue-darker);
+}
+
+button.default:hover:active {
+  background-color: var(--color-blue-darker);
+  border-color: var(--color-blue-darkest);
+}
+
+button:focus {
+  border-color: #fff !important;
+  box-shadow: 0 0 0 2px var(--color-blue-focusRing);
+}
+
+button:disabled{
+	opacity:0.4;
+}
+
+
+/* ====================== */
+/* -------Tooltip-------- */
+/* ====================== */
+
+
+/* START TOOLTIP STYLES */
+.tooltip-wrapper{
+	display:inline-block;
+	position: absolute;
+	top:0;
+	right:0;
+}
+.tooltip {
+  position: absolute;
+  right:-210px;
+  display: inline-block;
+  margin: 0;
+  padding: 5px 10px;
+  width: 200px;
+  color: #ffffff;
+  background-color: var(--color-red-60);
+  line-height:1;
+  border-radius:2px;
+}
+
+.tooltip:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 10px solid var(--color-red-60);
+}
+
+.tooltip span {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+
+
+
+
+textarea{
+  width: 100%;
+  height: calc(24px * 5);
+  padding: 0 6px 0;
+  margin:0 auto 14px auto;
+  background-color: #fff;
+  border: 1px solid var(--color-grey);
+  box-shadow: 0 0 0 0 hsla(208,100%,69%,0);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  color:var(--grey-dark);
+ }
