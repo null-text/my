@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ポータル</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>🏠</text></svg>">
+  </head>
+<style>
+#wrapper{
+	padding:14px;
+	position:relative;
+	font-size:20px;
+}
+.open_button{
+	background-color:#00aaff;
+	color:#ffffff;
+	cursor:pointer;
+	border-radius:4px;
+	padding:4px 7px;
+	font-weight:bold;
+	margin:0 auto 28px auto;
+	position:relative;
+	line-height:200%;
+}
+a, a:visited, a:hover{
+	color:#0000ff;
+}
+
+.openicon{
+	fill:#ffffff;
+	width:1em;
+	height:1em;
+	margin:0 0 0 0;
+	position:absolute;
+	right:5px;
+	line-height:200%;
+}
+.svg-symbol{
+	display:none;
+}
+.bookmarks{
+	line-height:200%;
+	height: 0;
+	overflow-y: hidden;
+}
+input{
+	display:none;
+}
+label {
+	cursor :pointer;
+	display: block;
+	text-decoration: none;
+	line-height: 1;
+	position: relative;
+	margin:28px 0 0 0;
+	color:#242424;
+	font-weight:bold;
+	font-size:24px;
+}
+
+input:checked + label + div{
+  height: auto;
+  opacity: 1;
+  padding: 7px 0;
+}
+
+/*閉じた状態の矢印描画*/
+label:after{
+  content:"";
+  display:inline-block;
+  width:8px;
+  height:8px;
+  border-top: #242424 2px solid;
+  border-right: #242424 2px solid;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+	margin: 0 0 6px 8px;
+}
+/*開いた状態の矢印描画*/
+input:checked + label:after{
+  content:"";
+  display:inline-block;
+  width:8px;
+  height:8px;
+  border-top: #242424 2px solid;
+  border-right: #242424 2px solid;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+	margin: 0 0 3px 8px;
+}
+</style>
+
+
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-symbol">
+  <symbol viewBox="0 0 24 24" id="open">
+   <title>マイメニュー</title>
+   <path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/>
+  </symbol>
+ </svg>
+<div id="wrapper">
+	<div class="open_button"id="obj1">🌟 毎日くじ<svg viewBox="0 0 24 24" class="openicon"><use xlink:href="#open"></use></svg></div>
+	<div class="open_button"id="obj2">⭐ 毎日くじ<svg viewBox="0 0 24 24" class="openicon"><use xlink:href="#open"></use></svg></div>
+	<div class="open_button"id="obj3">✨ 毎日くじ<svg viewBox="0 0 24 24" class="openicon"><use xlink:href="#open"></use></svg></div>
+	
+	
+	<input type="checkbox" id="menu1" name="a1" /><label for="menu1">🌟毎日くじ</label><div id="links1_inner" class="bookmarks"></div>
+	<input type="checkbox" id="menu2" name="a1" /><label for="menu2">⭐毎日くじ</label><div id="links2_inner" class="bookmarks"></div>
+	<input type="checkbox" id="menu3" name="a1" /><label for="menu3">✨毎日くじ</label><div id="links3_inner" class="bookmarks"></div>
+	<input type="checkbox" id="menu4" name="a1" /><label for="menu4">🌠毎週くじ</label><div id="links4_inner" class="bookmarks"></div>
+	<input type="checkbox" id="menu5" name="a1" checked /><label for="menu5">💎宝箱くじ</label><div id="links5_inner" class="bookmarks"></div>
+</div>
+
+
+</body>
+
+</html>
