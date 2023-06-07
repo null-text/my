@@ -3,10 +3,10 @@
 /* ====================== */
 
 :root {
-  --color-grey-60: #4a4a4f;
-  --color-grey-90: #0c0c0d;
+  --color-grey-60: #aaaaaa;
+  --color-grey-90: #cccccc;
   
-  --color-grey-10: #f9f9fa;
+  --color-grey-10: #242424;
   
   --color-red-60: #d70022;
   --color-red-focusRing: rgba(251, 0, 34, 0.3);
