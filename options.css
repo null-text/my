@@ -6,7 +6,7 @@
   --color-grey-60: #aaaaaa;
   --color-grey-90: #cccccc;
   
-  --color-grey-10: #242424;
+  --color-grey-10: #000000;
   
   --color-red-60: #d70022;
   --color-red-focusRing: rgba(251, 0, 34, 0.3);
@@ -82,7 +82,7 @@ body{
 }
 .options-section-separator {
   min-height: 1px;
-  background-color: #d7d7db;
+  background-color: var(--color-grey-60);
   margin:12px 0;
 }
 label{
