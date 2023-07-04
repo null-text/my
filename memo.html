@@ -67,7 +67,7 @@ hr{
 
 
 <div style="padding:14px;">
-	読み込み中...
+	<span id="loading">読み込み中...</span>
 	<textarea id="note"></textarea>
 	<button class="default center text" type="button" name="save" id="save" data-ja="保存">Save</button>
 
@@ -80,6 +80,7 @@ window.onload = function(){
 	const note = Cookies.get('note');
 	const textarea = document.getElementById( "note" );
 	console.log(note);
+document.querySelector('#loading').style.display = "none";
 document.querySelector('#note').style.display = "block";
 document.querySelector('#save').style.display = "block";
 
