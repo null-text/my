@@ -90,7 +90,7 @@ let canvas = document.querySelector('#canvas');
 let context = canvas.getContext('2d');
 
 //const dpr = window.devicePixelRatio;
-const dpr = 0.9;
+const dpr = 1;
 function onWindowResize() {
 	const canvas = document.querySelector('#canvas');
 	const ctx = canvas.getContext('2d');	
@@ -174,7 +174,7 @@ context.fillRect(0, 0, canvas.width, canvas.height);
 	for(var i = 0; i < aryRow.length; i++){
 		aryStr = aryRow[i].split('');
 		for(var j = 0; j < aryStr.length; j++){
-			ctx.fillText(aryStr[j], (j * font_size) + font_size/2, (i * font_size * 1.7) + font_size/2 + 10);
+			ctx.fillText(aryStr[j], (j * font_size) + canvas.width*0.05 , (i * font_size * 1.7) + canvas.height*0.05 + 10);
 		}
 	}	
 	
