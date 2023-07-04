@@ -1,7 +1,7 @@
 	const note = Cookies.get('note');
 	const textarea = document.getElementById( "note" );
 	console.log(note);
-	if(note) textarea.value = note;
+	
 
 
 
@@ -27,8 +27,10 @@ onWindowResize();
 
 
 
-
-drawText(note);
+if(note) {
+	textarea.value = note;
+	drawText(note);
+}
 
 //キャンバスに文字を描く
 function drawText(note){
