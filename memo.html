@@ -60,9 +60,14 @@ hr{
 		width:1080px;
 		display:none;
 	}
+	#note,#save{
+		display:none;
+	}
 </style>
 
+
 <div style="padding:14px;">
+	読み込み中...
 	<textarea id="note"></textarea>
 	<button class="default center text" type="button" name="save" id="save" data-ja="保存">Save</button>
 
@@ -70,11 +75,13 @@ hr{
 	<canvas id="canvas"></canvas>
 <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-<script defer>
+<script>
+window.onload = function(){
 	const note = Cookies.get('note');
 	const textarea = document.getElementById( "note" );
 	console.log(note);
-	
+document.querySelector('#note').style.display = "block";
+document.querySelector('#save').style.display = "block";
 
 
 
@@ -109,6 +116,7 @@ if(note) {
 
 //キャンバスに文字を描く
 function drawText(note){
+
 	const canvas = document.querySelector('#canvas');
 	const ctx = canvas.getContext('2d');
 	const row_string_cnt = 18; //一行あたりの文字数
@@ -188,6 +196,7 @@ a.click();
 	e.preventDefault();
 }	
 	document.querySelector("#save").addEventListener("click", saveOptions);
+}	
 </script>
 
 
