@@ -131,7 +131,7 @@ context.fillRect(0, 0, canvas.width, canvas.height);
 
 
 	//横幅と1行あたりの文字数から、文字サイズを算出
-	const font_size = Math.round( (canvas.width) / (row_string_cnt + 2));
+	const font_size = Math.round( (canvas.width*0.8) / (row_string_cnt));
 	
 	ctx.textBaseline = 'hanging';
 	//文字のスタイルを指定
@@ -174,7 +174,7 @@ context.fillRect(0, 0, canvas.width, canvas.height);
 	for(var i = 0; i < aryRow.length; i++){
 		aryStr = aryRow[i].split('');
 		for(var j = 0; j < aryStr.length; j++){
-			ctx.fillText(aryStr[j], (j * font_size) + canvas.width*0.05 , (i * font_size * 1.7) + canvas.height*0.05 + 10);
+			ctx.fillText(aryStr[j], (j * font_size) + canvas.width*0.1 , (i * font_size * 1.7) + 10 + canvas.height*0.1);
 		}
 	}	
 	
