@@ -23,7 +23,7 @@ function onWindowResize() {
     canvas.style.width = width + 'px';
     canvas.style.height = height + 'px';
 }
-onWindowResize();
+//onWindowResize();
 
 
 
