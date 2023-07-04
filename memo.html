@@ -89,19 +89,22 @@ document.querySelector('#save').style.display = "block";
 let canvas = document.querySelector('#canvas');
 let context = canvas.getContext('2d');
 
-const dpr = window.devicePixelRatio || 1;
+//const dpr = window.devicePixelRatio;
+const dpr = 1;
 function onWindowResize() {
 	const canvas = document.querySelector('#canvas');
 	const ctx = canvas.getContext('2d');	
     //const width = window.innerWidth;
-	const width = 2520;
+	const width = 1080;
     //const height = window.innerHeight;
-	const height = 1080;
+	const height = 2520;
 
     canvas.width = width * dpr;
     canvas.height = height * dpr;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
 
-    //ctx.scale(dpr,dpr);
+    ctx.scale(dpr,dpr);
 
     canvas.style.width = width + 'px';
     canvas.style.height = height + 'px';
