@@ -131,7 +131,7 @@ context.fillRect(0, 0, canvas.width, canvas.height);
 
 
 	//横幅と1行あたりの文字数から、文字サイズを算出
-	const font_size = Math.round( (canvas.width*0.8) / (row_string_cnt));
+	const font_size = Math.round( (canvas.width*0.8) / (row_string_cnt + 1));
 	
 	ctx.textBaseline = 'hanging';
 	//文字のスタイルを指定
