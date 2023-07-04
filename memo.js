@@ -104,7 +104,9 @@ function saveOptions(e) {
 const a = document.createElement("a");
 a.href = canvas.toDataURL("image/jpeg", 0.75); // PNGなら"image/png"
 a.download = "memo.jpg";
-a.click();	
+document.body.append(a);
+a.click();
+	
 	
 	e.preventDefault();
 }	
