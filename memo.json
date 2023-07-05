@@ -3,7 +3,7 @@
   "name":"Memo",
   "background_color": "#ffffff",
   "icons":[
-      {"src":"https://null-text.github.io/my/memo.png?0705_2","sizes":"512x512","type":"image/png"}
+      {"src":"https://null-text.github.io/my/memo.png?0705_3","sizes":"512x512","type":"image/png"}
   ],
   "display":"standalone"
 }
