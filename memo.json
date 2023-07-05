@@ -2,6 +2,7 @@
   "short_name":"mymemo",
   "name":"Memo",
   "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons":[
       {"src":"https://null-text.github.io/my/memo.png?0705_3","sizes":"512x512","type":"image/png"}
   ],
