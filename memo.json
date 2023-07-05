@@ -4,7 +4,7 @@
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons":[
-      {"src":"https://null-text.github.io/my/memo.png?0705_4","sizes":"512x512","type":"image/png"}
+      {"src":"https://null-text.github.io/my/memo.png?0705_5","sizes":"512x512","type":"image/png"}
   ],
   "display":"standalone"
 }
