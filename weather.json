@@ -1,0 +1,8 @@
+{
+  "short_name":"天気",
+  "name":"台東区の天気",
+  "icons":[
+      {"src":"https://null-text.github.io/my/weather.png","sizes":"514x514","type":"image/png"}
+  ],
+  "display":"standalone"
+}
