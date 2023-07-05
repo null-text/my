@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>天気</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="メモ" />
+
+<link rel="manifest" href="https://null-text.github.io/my/weather.json?0705_8">
+
+<link rel="icon" type="image/png" sizes="192x192" href="./weather_192x192.png">
+
+
+
+	
+</head>
+<body>
+<style>
+
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+body{
+	  	font-family: Arial, Meiryo, sans-serif;
+		padding:0;
+		margin:0;
+		font-size:100%;
+		color:#ccc;
+		background-color:#000;
+		background-image:url("https://null-text.github.io/my/loading2.gif");
+		background-position:center center;
+		background-repeat:no-repeat;
+	}
+iframe{
+width:100vw;
+height:100vh;
+}
+</style>
+
+
+<iframe src="https://weathernews.jp/onebox/tenki/tokyo/13106/" frameborder=0 />
+</body>
+</html>
