@@ -1,0 +1,8 @@
+{
+  "short_name":"Memo",
+  "name":"Memo",
+  "icons":[
+      {"src":"https://null-text.github.io/my/pen.png","sizes":"32x32","type":"image/png"}
+  ],
+  "display":"standalone"
+}
