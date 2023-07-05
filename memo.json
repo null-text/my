@@ -1,8 +1,6 @@
 {
   "short_name":"MEMO",
   "name":"MEMO",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
   "icons":[
       {"src":"https://null-text.github.io/my/memo_192x192.png?0705_7","sizes":"192x192","type":"image/png"}
   ],
