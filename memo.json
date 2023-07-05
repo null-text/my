@@ -2,7 +2,7 @@
   "short_name":"Memo",
   "name":"Memo",
   "icons":[
-      {"src":"https://null-text.github.io/my/pen.png","sizes":"32x32","type":"image/png"}
+      {"src":"https://null-text.github.io/my/memo_96x96.png","sizes":"96x96","type":"image/png"}
   ],
   "display":"standalone"
 }
